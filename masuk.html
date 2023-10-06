@@ -25,9 +25,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">cibuyestock</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-home container-fluid">
+            <a class="navbar-brand" href="#">giftbox !</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,100 +35,99 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">beranda</a>
+                        <a class="nav-link" aria-current="page" href="index.html">beranda</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="customer.html">pelanggan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="barang.html">barang</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Transaksi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="masuk.html">Masuk</a></li>
-                            <li><a class="dropdown-item" href="#">Keluar</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="customer.html">daftar pelanggan</a>
+                        </li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="barang.html">daftar barang</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    transaksi
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="masuk.html">barang masuk</a></li>
+                                    <li><a class="dropdown-item" href="keluar.html">barang keluar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    profil
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="regis.html">registrasi</a></li>
+                                    <li><a class="dropdown-item" href="login.html">keluar</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Profil
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="regis.html">Registrasi</a></li>
-                            <li><a class="dropdown-item" href="login.html">Keluar</a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Button trigger modal -->
-    <div class="container-customer">
+
+    <div class="container-masuk">
         <div class="row">
             <div class="col">
                 <h3>daftar barang masuk !</h3>
-                <button type="button" class="btn btn-success mb-4" data-bs-toggle="modal"
+                <button type="button" class="btn btn-warning mb-4" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     Tambah Barang Masuk !
                 </button>
 
-                <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header head-masuk">
+                            <div class="header-masuk modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">barang masuk !</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <div class="container-tambahcust">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <form action="">
-                                                    <div class="form-floating mt-3">
-                                                        <input type="text" class="form-control" id="floatingInput"
-                                                            placeholder="artikel">
-                                                        <label for="floatingInput">artikel</label>
-                                                    </div>
-                                                    <div class="form-floating mt-3">
-                                                        <input type="text" class="form-control" id="floatingPassword"
-                                                            placeholder="nama barang">
-                                                        <label for="floatingInput">Nama barang</label>
-                                                    </div>
-                                                    <div class="form-floating mt-3">
-                                                        <input type="number" class="form-control" id="floatingPassword"
-                                                            placeholder="stok">
-                                                        <label for="floatingInput">masuk</label>
-                                                    </div>
-                                                    <div class="form-floating mt-3">
-                                                        <input type="text" class="form-control" id="floatingPassword"
-                                                            placeholder="satuan">
-                                                        <label for="floatingInput">satuan</label>
-                                                    </div>
-                                                    <div class="form-floating mt-3">
-                                                        <input type="date" class="form-control" id="floatingPassword"
-                                                            placeholder="tanggal">
-                                                        <label for="floatingInput">tanggal</label>
-                                                    </div>
-                                                </form>
-                                            </div>
+                            <div class="body-masuk modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <form action="">
+                                                <div class="form-floating mt-3">
+                                                    <input type="text" class="form-control" id="floatingInput"
+                                                        placeholder="artikel">
+                                                    <label for="floatingInput">artikel</label>
+                                                </div>
+                                                <div class="form-floating mt-3">
+                                                    <input type="text" class="form-control" id="floatingPassword"
+                                                        placeholder="nama barang">
+                                                    <label for="floatingInput">Nama barang</label>
+                                                </div>
+                                                <div class="form-floating mt-3">
+                                                    <input type="number" class="form-control" id="floatingPassword"
+                                                        placeholder="stok">
+                                                    <label for="floatingInput">masuk</label>
+                                                </div>
+                                                <div class="form-floating mt-3">
+                                                    <input type="text" class="form-control" id="floatingPassword"
+                                                        placeholder="satuan">
+                                                    <label for="floatingInput">satuan</label>
+                                                </div>
+                                                <div class="form-floating mt-3">
+                                                    <input type="date" class="form-control" id="floatingPassword"
+                                                        placeholder="tanggal">
+                                                    <label for="floatingInput">tanggal</label>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
+                            <div class="footer-masuk modal-footer">
                                 <button type="button" class="btn btn-secondary btn-sm"
                                     data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success btn-sm">Tambah</button>
+                                <button type="button" class="btn btn-warning btn-sm">Tambah</button>
                             </div>
                         </div>
                     </div>
