@@ -3,11 +3,13 @@ body {
 }
 
 
+.container-home,
 .container-login,
 .container-customer,
 .container-barang,
-.container-home,
-.container-masuk {
+.container-keluar,
+.container-masuk,
+.container-regis {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 300;
@@ -24,27 +26,13 @@ body {
     font-family: 'work sans';
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 
-.login,
-.container-regis {
-    font-family: 'work sans';
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-
-.login .form-floating {
+.form-floating {
     padding-bottom: 1rem;
-}
-
-
-.nav-item {
-    text-transform: uppercase;
-    font-size: 300;
 }
 
 
@@ -71,7 +59,7 @@ body {
 }
 
 .body-masuk {
-    background-color: #ffc107;
+    background-color: #198754;
 }
 
 .body-keluar {
@@ -102,3 +90,36 @@ body {
     text-transform: uppercase;
     font-family: 'work sans';
 }
+
+
+.form-search {
+    padding-right: 62.5rem;
+}
+
+
+.card-barang,
+.card-customer,
+.card-masuk,
+.card-keluar {
+    margin-top: 5rem;
+}
+
+
+.card-regis,
+.card-login {
+    margin-top: 2rem;
+}
+
+
+.offcanvas {
+    text-transform: uppercase;
+}
+
+
+
+/* Media Query */
+/* Extra Large */
+/* Laptop */
+/* Tablet */
+
+/* Handphone */
